@@ -1,0 +1,14 @@
+{
+    "manifest_version" : 2,
+    "name" : "Sasageyo",
+    "version" : "1.0",
+    "description" : "Sasageyo Anywhere",
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["Content.js"]
+        }
+    ]
+   
+}
+

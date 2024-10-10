@@ -1,13 +1,25 @@
 {
-    "manifest_version" : 2,
+    "manifest_version" : 3,
     "name" : "Sasageyo",
     "version" : "1.0",
     "description" : "Sasageyo Anywhere",
     "content_scripts":[
         {
             "matches": ["<all_urls>"],
-            "js": ["Content.js"]
+            "js": ["content.js"]
         }
+    ],
+    "action":{
+        "default_popup": "popup.html",
+        "default_title": "Sasageyo"
+    },
+    "permissions": [
+        "activeTab",
+        "webRequest",
+        "<all_urls>",
+        "tabs",
+        "webNavigation",
+        "storage"
     ]
    
 }
